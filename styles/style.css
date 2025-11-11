@@ -40,7 +40,7 @@
   block-size: clamp(20.4375rem, 19.5352rem + 3.8498vw, 23rem);
 }
 
-.container { 
+.container {
   border: var(--border-accent);
   background-color: var(--bg-color, #fff);
   inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
@@ -123,13 +123,16 @@
   mix-blend-mode: hard-light;
 }
 
-@supports((text-stroke: 1px var(--bg-color, #fff)) or (-webkit-text-stroke: 1px var(--bg-color, #fff))) {
+@supports (
+  (text-stroke: 1px var(--bg-color, #fff)) or
+    (-webkit-text-stroke: 1px var(--bg-color, #fff))
+) {
   .card__label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--bg-color, #fff);
     text-stroke: 1px var(--bg-color, #fff);
   }
-} 
+}
 
 .card__text {
   display: flex;
@@ -179,15 +182,15 @@
   fill: var(--animation-contour-color, #000);
 }
 
-.card__icon-button:active .main-body, 
-.card__icon-button:active .core, 
-.like-icon.is-liked .contour, 
-.like-icon.is-liked .main-body, 
+.card__icon-button:active .main-body,
+.card__icon-button:active .core,
+.like-icon.is-liked .contour,
+.like-icon.is-liked .main-body,
 .like-icon.is-liked .core {
   fill: var(--animation-fill-color, #ff0000);
 }
 
-.like-icon.is-liked .sparks{
+.like-icon.is-liked .sparks {
   animation: like-sparks 0.3s 1 ease-in 0.3s;
 }
 
@@ -210,7 +213,7 @@
 }
 
 .button-effects::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   transition: 0.5s ease-in-out;
@@ -276,7 +279,6 @@
 }
 
 @media (width <= 375px) {
-
   .save__button {
     flex-direction: column;
     padding: 17px 20px;
