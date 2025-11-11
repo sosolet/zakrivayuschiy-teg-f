@@ -162,12 +162,14 @@
   inline-size: 42px;
 }
 
-.card__icon-button:focus {
-  outline: none;
+.card__icon-button:focus,
+.button-effects:focus {
+  outline: transparent;
 }
 
 .card__icon-button:focus-visible {
-  border: var(--border-accent);
+  outline: var(--border-accent);
+  outline-offset: -2px;
 }
 
 .card__icon-button:hover .main-body,
@@ -217,10 +219,6 @@
 .button-effects:hover::before {
   background-color: var(--base-color, #000);
   transform: scaleX(1);
-}
-
-.button-effects:focus {
-  outline: none;
 }
 
 .button-effects:focus-visible {
