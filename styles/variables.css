@@ -12,7 +12,6 @@
     repeating-linear-gradient(to left,#d3d3d3 0px 2px, transparent 2px 4px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
   --border-accent: 2px solid #000;
-  --size-picture: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
   --bg-color: #fff;
   --base-color: #000;
   --animation-fill-color: #ff0000;
