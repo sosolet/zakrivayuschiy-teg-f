@@ -6,7 +6,7 @@
   --font-size-base: 18px;
   --font-size-accent: 14px;
   --font-accent: 'PressStart2P';
-  --font-weight-h1: 400;
+  --font-weight-page-title: 400;
   --backgound-page:
     repeating-linear-gradient(to top, #d3d3d3 0px 2px, transparent 2px 4px),
     repeating-linear-gradient(to left,#d3d3d3 0px 2px, transparent 2px 4px),
